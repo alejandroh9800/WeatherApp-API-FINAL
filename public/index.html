@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHIhMTKBiYF_GfWe50pT4hC7zowOZXyOE&libraries=places">
+</script>
+    <script defer src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+        </style>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+     <div class="header">
+         <div class="icon-container"></div>
+         <canvas id="icon" width="100" height="100"></canvas>
+     </div>   
+    </div>
+    <div class="content">
+        <div class="general-information">
+            <div class="status" data-status>Weather App</div>
+            <div class="location" data-location></div>
+        </div>
+        <div class="detail-section">
+            <div class="detail">
+                <div class="title">Wind</div>
+                <div class="value" data-wind>~</div>
+            </div>
+        </div>
+        <div class="detail-section">
+            <div class="detail">
+                <div class="title">Temperature</div>
+                <div class="value" data-temperature>~</div>
+            </div>
+        </div>
+        <div class="detail-section">
+            <div class="detail">
+                <div class="title">Humidity</div>
+                <div class="value" data-humidity>~</div>
+            </div>
+        </div>
+        <div class="city-search-container">
+            <input type="text" id="city-search" class="city-search" data-city-search 
+            placeholder="Enter Location">
+        </div>
+    </div>
+</body>
+</html>
